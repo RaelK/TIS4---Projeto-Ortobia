@@ -1,0 +1,228 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  .ContainerLogo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .logoImagem {
+    width: 100px;
+    height: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .rectangle {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Banner Principal */
+  .banner {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    justify-content: space-around;
+  }
+  
+  .containerTextoBanner {
+    padding: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #94cbdb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #94cbdb;
+    transform: scale(1.1); /* Aumenta 10% o tamanho */
+  }
+  
+  /* Seção Como Funciona */
+  .como-funciona {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .como-funciona h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .step {
+    max-width: 250px;
+  }
+  
+  .step h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 16px;
+  }
+  
+  /* Seção de Agendamento */
+  .agendamento {
+    background-color: #407b86;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .agendamento h2 {
+    font-size: 28px;
+    color: #fff;
+  }
+  
+  .agendamento form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .agendamento input,
+  .agendamento select {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .agendamento button {
+    background-color: #fff;
+    color: #407b86;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .agendamento button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Depoimentos */
+  .depoimentos {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .depoimentos h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .depoimento {
+    background-color: #94cbdb;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .links a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer .links a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .social a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  #tela-cadastro {
+    background-color: #eee;
+    height: 81.5vh;
+  }
+  
+  .step {
+    background-color: #94cbdb;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .textoBanner {
+    margin: 1rem;
+  }
+  
+  .botaoPortifolio {
+    background-color: #94cbdb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 1rem;
+  }

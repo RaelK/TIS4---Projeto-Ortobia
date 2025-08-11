@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gerenciar Consultas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Clínica Odontológica</h1>
+            </div>
+            <ul class="nav-links a">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="layout">  
+      <main class="conteudo">
+        <h1>Gerenciar Consultas</h1>
+        <button id="nova-consulta-btn" class="btn-primary" style="margin-bottom: 20px;">
+            Nova Consulta
+          </button>
+          
+          <div id="formulario-container" style="display: none;">
+            <form id="form-consulta">
+              <label for="usuarioId">Paciente:</label>
+              <select id="usuarioId" required></select><br><br>
+          
+              <label for="dataHora">Data e Hora:</label>
+              <input type="datetime-local" id="dataHora" required><br><br>
+          
+              <label for="observacoes">Observações:</label><br>
+              <textarea id="observacoes" rows="3"></textarea><br><br>
+          
+              <button type="submit" class="btn-edit">Salvar</button>
+              <button type="button" class="btn-delete" onclick="cancelarFormulario()">Cancelar</button>
+            </form>
+          </div>
+          
+        <div class="cards" id="consultas-container">
+            
+        </div>
+      </main>
+    </div>
+  
+    <script src="js/gerenciarConsultas.js" defer></script>
+  </body>
+  
+</html>
