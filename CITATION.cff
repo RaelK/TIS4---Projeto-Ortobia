@@ -1,0 +1,29 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: OrtoBia
+authors:
+  - family-names: Oliveira Pires
+    given-names: Bernardo
+  - family-names: Lopes de Souza
+    given-names: Bruna
+  - family-names: Nunes Pires Junior
+    given-names: Cristiano
+  - family-names: Kiluanji de Jesus Cassimiro
+    given-names: Rael
+  - family-names: Xavier Ramalho
+    given-names: Vinicius
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: de Paiva Carvalho
+    given-names: Joyce Christina
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Lúcia da Silva
+    given-names: Soraia
+keywords:
+  - Odontologia
+  - Agendamento de Consultas
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti4-1254100-ortobia
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2022-07-14
