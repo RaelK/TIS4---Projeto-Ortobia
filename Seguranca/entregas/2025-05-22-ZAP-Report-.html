@@ -1,0 +1,2629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="2025-05-22-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2025-05-22-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2025-05-22-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2025-05-22-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on qui. 22 mai. 2025, at 14:51:00</span>
+		</p>
+		<p>ZAP Version: 2.16.1</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-3-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Alto</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alto</span> <span>(1)</span></a></li>
+							
+							
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Médio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alto</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Médio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Médio</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Baixo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Médio</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alto</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Médio</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Baixo</span> <span>(2)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost:8080</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Alto</span>, <span class="risk-level">Médio</span>, <span class="risk-level">Baixo</span>, <span class="risk-level">Informativo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Alto</span>, <span class="confidence-level">Médio</span>, <span class="confidence-level">Baixo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Alto</span>, <span class="confidence-level">Médio</span>, <span class="confidence-level">Baixo</span>, <span class="confidence-level">Falso Positivo</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">Alto</th>
+							<th scope="col">Médio</th>
+							<th scope="col">Baixo</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Alto</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(10,0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Médio</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(30,0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Baixo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(10,0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informativo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(50,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Alto</span><br>  <span
+									class="additional-info-percentages">(= Alto)</span>  
+							</th>
+							<th scope="col">
+								<span>Médio</span><br>   <span
+									class="additional-info-percentages">(&gt;= Médio)</span> 
+							</th>
+							<th scope="col">
+								<span>Baixo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Baixo)</span> 
+							</th>
+							<th scope="col">
+								<span>Informativo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informativo)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost:8080</th>
+							
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(10)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Hash Disclosure - BCrypt</a></th>
+							<td class="risk-level">Alto</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Application Error Disclosure</a></th>
+							<td class="risk-level">Médio</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Médio</td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(120,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Spring Actuator Information Leak</a></th>
+							<td class="risk-level">Médio</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Cross-Domain JavaScript Source File Inclusion</a></th>
+							<td class="risk-level">Baixo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Authentication Request Identified</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Divulgação de Informações - Comentários Suspeitos</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Information Disclosure - Sensitive Information in URL</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(40,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Modern Web Application</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">User Controllable HTML Element Attribute (Potential XSS)</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>10</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				<li id="alerts--risk-3-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Alto</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alto</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Hash Disclosure - BCrypt</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/usuarios</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">OWASP_2021_A04</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A hash was disclosed by the web server. - BCrypt</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (294 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/usuarios HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/js/gerenciarConsultas.js
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (365 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Date: Thu, 22 May 2025 17:49:07 GMT
+content-length: 777
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (777 bytes)</summary>
+				
+				<pre><code>[{&quot;id&quot;:1,&quot;nome_completo&quot;:&quot;José Silva&quot;,&quot;email&quot;:&quot;jose@gmail.com&quot;,&quot;username&quot;:&quot;jose&quot;,&quot;password&quot;:&quot;$2a$10$4jGcAXPoICUhetJ76NOAi.TtVQgRdiLwEwClpzbi5G0773kZgcEw2&quot;,&quot;cpf&quot;:&quot;123.456.789-01&quot;,&quot;telefone&quot;:&quot;(31)99999-0001&quot;,&quot;endereco&quot;:null,&quot;role&quot;:&quot;USER&quot;,&quot;agendamentos&quot;:[]},{&quot;id&quot;:2,&quot;nome_completo&quot;:&quot;ADMIN&quot;,&quot;email&quot;:&quot;admin@gmail.com&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;$2a$10$lbNnQQibo6uMqHPzAeqT/e/aS/UUNDmHDdg5W8shHf5E/U.9vP3DW&quot;,&quot;cpf&quot;:&quot;999.999.999-00&quot;,&quot;telefone&quot;:&quot;(31)99999-0002&quot;,&quot;endereco&quot;:null,&quot;role&quot;:&quot;SECRETARIA&quot;,&quot;agendamentos&quot;:[]},{&quot;id&quot;:3,&quot;nome_completo&quot;:&quot;DENTISTA&quot;,&quot;email&quot;:&quot;dentista@gmail.com&quot;,&quot;username&quot;:&quot;dentista&quot;,&quot;password&quot;:&quot;$2a$10$hi8TUiJclZTo4tbKZsJtsuNrUSmORszh3.1YzFTSUa/DfIQBEDf9u&quot;,&quot;cpf&quot;:&quot;999.999.998-00&quot;,&quot;telefone&quot;:&quot;(31)99999-0003&quot;,&quot;endereco&quot;:null,&quot;role&quot;:&quot;DENTISTA&quot;,&quot;agendamentos&quot;:[]}]</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>$2a$10$4jGcAXPoICUhetJ76NOAi.TtVQgRdiLwEwClpzbi5G0773kZgcEw2</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that hashes that are used to protect credentials or other resources are not leaked by the web server or database. There is typically no requirement for password hashes to be accessible to the web browser.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Médio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alto</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/gerenciarConsulta.html</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (284 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/gerenciarConsulta.html HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (359 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Last-Modified: Wed, 21 May 2025 20:19:37 GMT
+Cache-Control: no-store
+Accept-Ranges: bytes
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+X-Frame-Options: DENY
+Content-Type: text/html
+Content-Length: 1862
+Date: Thu, 22 May 2025 17:49:07 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1862 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;title&gt;Gerenciar Consultas&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav class=&quot;navbar&quot;&gt;
+            &lt;div class=&quot;logo&quot;&gt;
+                &lt;h1&gt;Clínica Odontológica&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;nav-links a&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#sobre&quot;&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;agenda.html&quot;&gt;Agenda&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#contato&quot;&gt;Contato&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;layout&quot;&gt;  
+      &lt;main class=&quot;conteudo&quot;&gt;
+        &lt;h1&gt;Gerenciar Consultas&lt;/h1&gt;
+        &lt;button id=&quot;nova-consulta-btn&quot; class=&quot;btn-primary&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+            Nova Consulta
+          &lt;/button&gt;
+          
+          &lt;div id=&quot;formulario-container&quot; style=&quot;display: none;&quot;&gt;
+            &lt;form id=&quot;form-consulta&quot;&gt;
+              &lt;label for=&quot;usuarioId&quot;&gt;Paciente:&lt;/label&gt;
+              &lt;select id=&quot;usuarioId&quot; required&gt;&lt;/select&gt;&lt;br&gt;&lt;br&gt;
+          
+              &lt;label for=&quot;dataHora&quot;&gt;Data e Hora:&lt;/label&gt;
+              &lt;input type=&quot;datetime-local&quot; id=&quot;dataHora&quot; required&gt;&lt;br&gt;&lt;br&gt;
+          
+              &lt;label for=&quot;observacoes&quot;&gt;Observações:&lt;/label&gt;&lt;br&gt;
+              &lt;textarea id=&quot;observacoes&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+          
+              &lt;button type=&quot;submit&quot; class=&quot;btn-edit&quot;&gt;Salvar&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;btn-delete&quot; onclick=&quot;cancelarFormulario()&quot;&gt;Cancelar&lt;/button&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+          
+        &lt;div class=&quot;cards&quot; id=&quot;consultas-container&quot;&gt;
+            
+        &lt;/div&gt;
+      &lt;/main&gt;
+    &lt;/div&gt;
+  
+    &lt;script src=&quot;js/gerenciarConsultas.js&quot; defer&gt;&lt;/script&gt;
+  &lt;/body&gt;
+  
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Médio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Médio</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Application Error Disclosure</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/agendamentos/$</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces">WSTG-v42-ERRH-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling">WSTG-v42-ERRH-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/550.html">CWE-550</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (300 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/agendamentos/$ HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/js/gerenciarConsultas.js
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (386 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 400
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Date: Thu, 22 May 2025 17:49:07 GMT
+Connection: close
+content-length: 17059
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (17059 bytes)</summary>
+				
+				<pre><code>{&quot;timestamp&quot;:&quot;2025-05-22T17:49:07.389+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;trace&quot;:&quot;org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter &#39;id&#39;: Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; For input string: \&quot;$\&quot;\r\n\tat org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:301)\r\n\tat org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:136)\r\n\tat org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)\r\n\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)\r\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)\r\n\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)\r\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\r\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\r\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\r\n\tat org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)\r\n\tat org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)\r\n\tat org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)\r\n\tat org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)\r\n\tat org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)\r\n\tat org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)\r\n\tat org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)\r\n\tat org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)\r\n\tat org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)\r\n\tat org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)\r\n\tat org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)\r\n\tat org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\r\n\tat org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)\r\n\tat org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)\r\n\tat org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)\r\n\tat org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)\r\n\tat org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)\r\n\tat org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\r\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\r\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\r\n\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\r\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\r\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)\r\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\r\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)\r\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)\r\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\r\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\r\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)\r\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)\r\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\r\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\r\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)\r\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)\r\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nCaused by: java.lang.NumberFormatException: For input string: \&quot;$\&quot;\r\n\tat java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)\r\n\tat java.base/java.lang.Long.parseLong(Long.java:695)\r\n\tat java.base/java.lang.Long.valueOf(Long.java:1157)\r\n\tat org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:204)\r\n\tat org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)\r\n\tat org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:439)\r\n\tat org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:412)\r\n\tat org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:161)\r\n\tat org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:80)\r\n\tat org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)\r\n\tat org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:870)\r\n\tat org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:293)\r\n\t... 127 more\r\n&quot;,&quot;message&quot;:&quot;Method parameter &#39;id&#39;: Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; For input string: \&quot;$\&quot;&quot;,&quot;path&quot;:&quot;/agendamentos/$&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>java.lang.NumberFormatException: For input string:</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Spring Actuator Information Leak</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/actuator/health</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/215.html">CWE-215</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_API = </span>
+				</li>
+				<li>
+					 <span>POLICY_QA_FULL = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces">WSTG-v42-CONF-05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Spring Actuator for Health is enabled and may reveal sensitive information about this application. Spring Actuators can be used for real monitoring purposes, but should be used with caution as to not expose too much information about the application or the infrastructure running it.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (244 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/actuator/health HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (392 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/vnd.spring-boot.actuator.v3+json
+Date: Thu, 22 May 2025 17:49:17 GMT
+content-length: 15
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (15 bytes)</summary>
+				
+				<pre><code>{&quot;status&quot;:&quot;UP&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>{&quot;status&quot;:&quot;UP&quot;}</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Disable the Health Actuators and other actuators, or restrict them to administrative users.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Baixo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Médio</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Cross-Domain JavaScript Source File Inclusion</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/829.html">CWE-829</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The page includes one or more script files from a third-party domain.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (229 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/ HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (384 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Last-Modified: Wed, 21 May 2025 20:19:37 GMT
+Cache-Control: no-store
+Accept-Ranges: bytes
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+X-Frame-Options: DENY
+Content-Type: text/html
+Content-Language: pt-BR
+Content-Length: 4170
+Date: Thu, 22 May 2025 17:49:07 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4170 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Clínica Odontológica&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav class=&quot;navbar&quot;&gt;
+            &lt;div class=&quot;logo&quot;&gt;
+                &lt;h1&gt;Clínica Odontológica&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;nav-links&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#home&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#sobre&quot;&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;agenda.html&quot;&gt;Agenda&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#contato&quot;&gt;Contato&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;servicos.html&quot;&gt;Serviços&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;login.html&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;cadastro.html&quot;&gt;Cadastro&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;gerenciarConsulta.html&quot;&gt;Gerenciar Consultas&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section id=&quot;home&quot; class=&quot;hero-section&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;hero-content&quot;&gt;
+                    &lt;div class=&quot;hero-text&quot;&gt;
+                        &lt;h2&gt;Bem-vindo à nossa Clínica Odontológica&lt;/h2&gt;
+                        &lt;p&gt;Cuide do seu sorriso com a melhor profissional.&lt;/p&gt;
+                        &lt;a href=&quot;agenda.html&quot; class=&quot;btn-primary&quot;&gt;Agende sua Consulta&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;hero-image&quot;&gt;
+                        &lt;img src=&quot;./images/Principal (fundo claro) 2.png&quot; alt=&quot;Dentista&quot; id=&quot;dentist-image&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section id=&quot;sobre&quot; class=&quot;about-section&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;h2&gt;Sobre a Dra. Beatriz Mamede&lt;/h2&gt;
+                &lt;div class=&quot;about-content&quot;&gt;
+                    &lt;div class=&quot;about-text&quot;&gt;
+                        &lt;p&gt;Formada em Odontologia pela Pontífica Universidade Católica de Minas Gerais em 2020, com especialização em implantodontia e ortodontia e atualmente terminando a terceira pós graduação.&lt;/p&gt;
+                        &lt;p&gt;Possuo mais de 5 anos de experiência no mercado, oferecendo tratamentos de qualidade e personalizados para cada paciente.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;about-image&quot;&gt;
+                        &lt;img src=&quot;./images/Dra-Beatriz-Mamede-62.jpg&quot; alt=&quot;Consultório&quot; id=&quot;office-image&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section id=&quot;contato&quot; class=&quot;contact-section&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;h2&gt;Entre em Contato&lt;/h2&gt;
+                &lt;div class=&quot;contact-content&quot;&gt;
+                    &lt;div class=&quot;contact-info&quot;&gt;
+                        &lt;p&gt;&lt;strong&gt;Endereço:&lt;/strong&gt; R. Cândido Nogueira, 35 - Grajaú, Belo Horizonte - MG, 30431-218&lt;/p&gt;
+                        &lt;p&gt;&lt;strong&gt;Telefone:&lt;/strong&gt; (31)9 8366-8435&lt;/p&gt;
+                        &lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; dra.beatriz.mamede@gmail.com&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;contact-hours&quot;&gt;
+                        &lt;h3&gt;Horário de Funcionamento&lt;/h3&gt;
+                        &lt;p&gt;Segunda a Sexta: 9h às 18h&lt;/p&gt;
+                        &lt;p&gt;Sábado: 9h às 13h&lt;/p&gt;
+                        &lt;p&gt;Domingo: Fechado&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;map-container&quot;&gt;
+                    &lt;h3&gt;Nossa Localização&lt;/h3&gt;
+                    &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;p&gt;&amp;copy; 2024 Clínica Odontológica. Todos os direitos reservados.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;!-- Google Maps API --&gt;
+    &lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap&quot; async defer&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt; </code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap&quot; async defer&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can&#39;t be controlled by end users of the application.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-0-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alto</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Authentication Request Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/login.html?email=zaproxy%40example.com&amp;password=ZAP</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given request has been identified as an authentication request. The &#39;Other Info&#39; field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to &quot;Auto-Detect&quot; then this rule will change the authentication to match the request identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>userParam=email</p>
+
+<p>userValue=zaproxy@example.com</p>
+
+<p>passwordParam=password</p>
+
+<p>referer=http://localhost:8080/login.html</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (323 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/login.html?email=zaproxy%40example.com&amp;password=ZAP HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/login.html
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (359 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Last-Modified: Wed, 21 May 2025 20:19:37 GMT
+Cache-Control: no-store
+Accept-Ranges: bytes
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+X-Frame-Options: DENY
+Content-Type: text/html
+Content-Length: 2418
+Date: Thu, 22 May 2025 17:49:07 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2418 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Login - Clínica Odontológica&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav class=&quot;navbar&quot;&gt;
+            &lt;div class=&quot;logo&quot;&gt;
+                &lt;h1&gt;Clínica Odontológica&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;nav-links&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#sobre&quot;&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;agenda.html&quot;&gt;Agenda&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#contato&quot;&gt;Contato&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;servicos.html&quot;&gt;Serviços&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section class=&quot;auth-section&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;auth-content&quot;&gt;
+                    &lt;div class=&quot;auth-box&quot;&gt;
+                        &lt;h2&gt;Login&lt;/h2&gt;
+                        &lt;form id=&quot;login-form&quot;&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+                                &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label for=&quot;password&quot;&gt;Senha:&lt;/label&gt;
+                                &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required&gt;
+                            &lt;/div&gt;
+                            &lt;button type=&quot;submit&quot; class=&quot;btn-primary&quot;&gt;Entrar&lt;/button&gt;
+                        &lt;/form&gt;
+                        &lt;div class=&quot;auth-links&quot;&gt;
+                            &lt;p&gt;Não tem uma conta? &lt;a href=&quot;cadastro.html&quot;&gt;Cadastre-se&lt;/a&gt;&lt;/p&gt;
+                            &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;forgot-password&quot;&gt;Esqueceu sua senha?&lt;/a&gt;&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;p&gt;&amp;copy; 2024 Clínica Odontológica. Todos os direitos reservados.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;script src=&quot;js/auth.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt; </code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>password</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Médio</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Information Disclosure - Sensitive Information in URL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/login.html?email=zaproxy%40example.com&amp;password=ZAP</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/598.html">CWE-598</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A solicitação parecia conter informações confidenciais vazadas no URL. Isso pode violar a PCI e a maioria das políticas de conformidade organizacional. Você pode configurar a lista de strings para esta verificação para adicionar ou remover valores específicos para seu ambiente.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>A URL contém endereços de e-mail.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (323 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/login.html?email=zaproxy%40example.com&amp;password=ZAP HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/login.html
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (359 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Last-Modified: Wed, 21 May 2025 20:19:37 GMT
+Cache-Control: no-store
+Accept-Ranges: bytes
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+X-Frame-Options: DENY
+Content-Type: text/html
+Content-Length: 2418
+Date: Thu, 22 May 2025 17:49:07 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2418 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Login - Clínica Odontológica&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav class=&quot;navbar&quot;&gt;
+            &lt;div class=&quot;logo&quot;&gt;
+                &lt;h1&gt;Clínica Odontológica&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;nav-links&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#sobre&quot;&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;agenda.html&quot;&gt;Agenda&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#contato&quot;&gt;Contato&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;servicos.html&quot;&gt;Serviços&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section class=&quot;auth-section&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;auth-content&quot;&gt;
+                    &lt;div class=&quot;auth-box&quot;&gt;
+                        &lt;h2&gt;Login&lt;/h2&gt;
+                        &lt;form id=&quot;login-form&quot;&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+                                &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label for=&quot;password&quot;&gt;Senha:&lt;/label&gt;
+                                &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required&gt;
+                            &lt;/div&gt;
+                            &lt;button type=&quot;submit&quot; class=&quot;btn-primary&quot;&gt;Entrar&lt;/button&gt;
+                        &lt;/form&gt;
+                        &lt;div class=&quot;auth-links&quot;&gt;
+                            &lt;p&gt;Não tem uma conta? &lt;a href=&quot;cadastro.html&quot;&gt;Cadastre-se&lt;/a&gt;&lt;/p&gt;
+                            &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;forgot-password&quot;&gt;Esqueceu sua senha?&lt;/a&gt;&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;p&gt;&amp;copy; 2024 Clínica Odontológica. Todos os direitos reservados.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;script src=&quot;js/auth.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt; </code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>zaproxy@example.com</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Não passe informações confidenciais em URIs.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/login.html</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (272 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/login.html HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (359 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Last-Modified: Wed, 21 May 2025 20:19:37 GMT
+Cache-Control: no-store
+Accept-Ranges: bytes
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+X-Frame-Options: DENY
+Content-Type: text/html
+Content-Length: 2418
+Date: Thu, 22 May 2025 17:49:07 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2418 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Login - Clínica Odontológica&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav class=&quot;navbar&quot;&gt;
+            &lt;div class=&quot;logo&quot;&gt;
+                &lt;h1&gt;Clínica Odontológica&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;nav-links&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#sobre&quot;&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;agenda.html&quot;&gt;Agenda&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#contato&quot;&gt;Contato&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;servicos.html&quot;&gt;Serviços&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section class=&quot;auth-section&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;auth-content&quot;&gt;
+                    &lt;div class=&quot;auth-box&quot;&gt;
+                        &lt;h2&gt;Login&lt;/h2&gt;
+                        &lt;form id=&quot;login-form&quot;&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+                                &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;label for=&quot;password&quot;&gt;Senha:&lt;/label&gt;
+                                &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required&gt;
+                            &lt;/div&gt;
+                            &lt;button type=&quot;submit&quot; class=&quot;btn-primary&quot;&gt;Entrar&lt;/button&gt;
+                        &lt;/form&gt;
+                        &lt;div class=&quot;auth-links&quot;&gt;
+                            &lt;p&gt;Não tem uma conta? &lt;a href=&quot;cadastro.html&quot;&gt;Cadastre-se&lt;/a&gt;&lt;/p&gt;
+                            &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;forgot-password&quot;&gt;Esqueceu sua senha?&lt;/a&gt;&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;p&gt;&amp;copy; 2024 Clínica Odontológica. Todos os direitos reservados.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;script src=&quot;js/auth.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt; </code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;a href=&quot;#&quot; class=&quot;forgot-password&quot;&gt;Esqueceu sua senha?&lt;/a&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Baixo</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:8080</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Divulgação de Informações - Comentários Suspeitos</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/js/auth.js</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/615.html">CWE-615</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bUSERNAME\b and was detected in likely comment: &quot;// Usando parte do email como username&quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (282 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/js/auth.js HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/login.html
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (365 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Last-Modified: Wed, 21 May 2025 20:19:37 GMT
+Cache-Control: no-store
+Accept-Ranges: bytes
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+X-Frame-Options: DENY
+Content-Type: text/javascript
+Content-Length: 5638
+Date: Thu, 22 May 2025 17:49:07 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (5638 bytes)</summary>
+				
+				<pre><code>// Configuração da URL base da API
+const API_BASE_URL = &#39;http://localhost:8080/api&#39;;
+
+// Função para formatar CPF
+function formatCPF(cpf) {
+    cpf = cpf.replace(/\D/g, &#39;&#39;);
+    cpf = cpf.replace(/(\d{3})(\d)/, &#39;$1.$2&#39;);
+    cpf = cpf.replace(/(\d{3})(\d)/, &#39;$1.$2&#39;);
+    cpf = cpf.replace(/(\d{3})(\d{1,2})$/, &#39;$1-$2&#39;);
+    return cpf;
+}
+
+// Função para formatar telefone
+function formatPhone(phone) {
+    phone = phone.replace(/\D/g, &#39;&#39;);
+    phone = phone.replace(/(\d{2})(\d)/, &#39;($1) $2&#39;);
+    phone = phone.replace(/(\d{5})(\d{4})$/, &#39;$1-$2&#39;);
+    return phone;
+}
+
+// Inicialização dos formulários
+document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
+    // Formulário de login
+    const loginForm = document.getElementById(&#39;login-form&#39;);
+    if (loginForm) {
+        loginForm.addEventListener(&#39;submit&#39;, handleLogin);
+    }
+
+    // Formulário de cadastro
+    const cadastroForm = document.getElementById(&#39;cadastro-form&#39;);
+    if (cadastroForm) {
+        // Adicionar formatação de CPF
+        const cpfInput = document.getElementById(&#39;cpf&#39;);
+        if (cpfInput) {
+            cpfInput.addEventListener(&#39;input&#39;, (e) =&gt; {
+                e.target.value = formatCPF(e.target.value);
+            });
+        }
+
+        // Adicionar formatação de telefone
+        const phoneInput = document.getElementById(&#39;telefone&#39;);
+        if (phoneInput) {
+            phoneInput.addEventListener(&#39;input&#39;, (e) =&gt; {
+                e.target.value = formatPhone(e.target.value);
+            });
+        }
+
+        cadastroForm.addEventListener(&#39;submit&#39;, handleCadastro);
+    }
+});
+
+// Função para lidar com o login
+async function handleLogin(event) {
+    event.preventDefault();
+    
+    const formData = {
+        email: document.getElementById(&#39;email&#39;).value,
+        senha: document.getElementById(&#39;password&#39;).value
+    };
+
+    try {
+        const response = await fetch(`${API_BASE_URL}/auth/login`, {
+            method: &#39;POST&#39;,
+            headers: {
+                &#39;Content-Type&#39;: &#39;application/json&#39;
+            },
+            body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            // Armazenar o token e o ID do usuário no sessionStorage
+            console.log(data);
+            localStorage.setItem(&#39;token&#39;, data.token);
+            sessionStorage.setItem(&#39;loggedId&#39;, data.id);
+            sessionStorage.setItem(&#39;nome&#39;, data.nome);
+            sessionStorage.setItem(&#39;role&#39;, data.role);
+            alert(&#39;Login realizado com sucesso!&#39;);
+            if (data.role == &#39;DENTISTA&#39; || data.role == &#39;SECRETARIA&#39;) {
+                // Redirecionar para a página do dentista
+                window.location.href = &#39;consultarCadastro.html&#39;;
+            }
+            else{
+            // Redirecionar para a página principal
+            window.location.href = &#39;primeiraTelaCliente.html&#39;;
+            }
+        } else {
+            const error = await response.json();
+            alert(`Erro ao fazer login: ${error.message}`);
+        }
+    } catch (error) {
+        console.error(&#39;Erro ao fazer login:&#39;, error);
+        alert(&#39;Erro ao fazer login. Por favor, tente novamente.&#39;);
+    }
+}
+
+// Função para lidar com o cadastro
+async function handleCadastro(event) {
+    event.preventDefault();
+    
+    const senha = document.getElementById(&#39;senha&#39;).value;
+    const confirmarSenha = document.getElementById(&#39;confirmar-senha&#39;).value;
+
+    if (senha !== confirmarSenha) {
+        alert(&#39;As senhas não coincidem!&#39;);
+        return;
+    }
+
+    const formData = {
+        nome_completo: document.getElementById(&#39;nome&#39;).value,
+        email: document.getElementById(&#39;email&#39;).value,
+        username: document.getElementById(&#39;email&#39;).value.split(&#39;@&#39;)[0], // Usando parte do email como username
+        cpf: document.getElementById(&#39;cpf&#39;).value.replace(/\D/g, &#39;&#39;),
+        telefone: document.getElementById(&#39;telefone&#39;).value.replace(/\D/g, &#39;&#39;),
+        endereco: document.getElementById(&#39;endereco&#39;).value,
+        password: senha
+    };
+
+    try {
+        const response = await fetch(`${API_BASE_URL}/auth/register`, {
+            method: &#39;POST&#39;,
+            headers: {
+                &#39;Content-Type&#39;: &#39;application/json&#39;
+            },
+            body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+            alert(&#39;Cadastro realizado com sucesso!&#39;);
+            window.location.href = &#39;login.html&#39;;
+        } else {
+            const error = await response.json();
+            alert(`Erro ao cadastrar: ${error.message}`);
+        }
+    } catch (error) {
+        console.error(&#39;Erro ao cadastrar:&#39;, error);
+        alert(&#39;Erro ao cadastrar. Por favor, tente novamente.&#39;);
+    }
+}
+
+// Função para verificar se o usuário está autenticado
+function checkAuth() {
+    const token = localStorage.getItem(&#39;token&#39;);
+    if (!token) {
+        // Redirecionar para a página de login se não estiver autenticado
+        if (!window.location.pathname.includes(&#39;login.html&#39;) &amp;&amp; 
+            !window.location.pathname.includes(&#39;cadastro.html&#39;)) {
+            window.location.href = &#39;login.html&#39;;
+        }
+    }
+    return token;
+}
+
+// Função para fazer logout
+function logout() {
+    localStorage.removeItem(&#39;token&#39;);
+    window.location.href = &#39;login.html&#39;;
+}
+
+// Verificar autenticação em todas as páginas exceto login e cadastro
+if (!window.location.pathname.includes(&#39;login.html&#39;) &amp;&amp; 
+    !window.location.pathname.includes(&#39;cadastro.html&#39;)) {
+    checkAuth();
+} </code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>username</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remova todos os comentários que retornam informações que podem ajudar um invasor e corrigir quaisquer problemas subjacentes aos quais eles se referem.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">User Controllable HTML Element Attribute (Potential XSS)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:8080/servicos.html?description=Zaproxy+alias+impedit+expedita+quisquam+pariatur+exercitationem.+Nemo+rerum+eveniet+dolores+rem+quia+dignissimos.&amp;duration=15&amp;price=0&amp;service-type=extracao</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/20.html">CWE-20</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p>
+
+<p>http://localhost:8080/servicos.html?description=Zaproxy+alias+impedit+expedita+quisquam+pariatur+exercitationem.+Nemo+rerum+eveniet+dolores+rem+quia+dignissimos.&amp;duration=15&amp;price=0&amp;service-type=extracao</p>
+
+<p>appears to include user input in:</p>
+
+<p>a(n) [option] tag [value] attribute</p>
+
+<p>The user input found was:</p>
+
+<p>service-type=extracao</p>
+
+<p>The user-controlled value was:</p>
+
+<p>extracao</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (456 bytes)</summary>
+				
+				<pre><code>GET http://localhost:8080/servicos.html?description=Zaproxy+alias+impedit+expedita+quisquam+pariatur+exercitationem.+Nemo+rerum+eveniet+dolores+rem+quia+dignissimos.&amp;duration=15&amp;price=0&amp;service-type=extracao HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/servicos.html
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (359 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Last-Modified: Wed, 21 May 2025 20:19:37 GMT
+Cache-Control: no-store
+Accept-Ranges: bytes
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+X-Frame-Options: DENY
+Content-Type: text/html
+Content-Length: 4839
+Date: Thu, 22 May 2025 17:49:07 GMT
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4839 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Cadastro de Serviços - Clínica Odontológica&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav class=&quot;navbar&quot;&gt;
+            &lt;div class=&quot;logo&quot;&gt;
+                &lt;h1&gt;Clínica Odontológica&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;nav-links&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#sobre&quot;&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;agenda.html&quot;&gt;Agenda&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#contato&quot;&gt;Contato&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;servicos.html&quot; class=&quot;active&quot;&gt;Serviços&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;login.html&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;cadastro.html&quot;&gt;Cadastro&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section class=&quot;services-section&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;h2&gt;Cadastro de Serviços&lt;/h2&gt;
+                &lt;div class=&quot;services-content&quot;&gt;
+                    &lt;form id=&quot;service-form&quot; class=&quot;service-form&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label for=&quot;service-type&quot;&gt;Tipo de Serviço:&lt;/label&gt;
+                            &lt;select id=&quot;service-type&quot; name=&quot;service-type&quot; required&gt;
+                                &lt;option value=&quot;&quot;&gt;Selecione um serviço&lt;/option&gt;
+                                &lt;option value=&quot;extracao&quot;&gt;Extrações no geral&lt;/option&gt;
+                                &lt;option value=&quot;implante&quot;&gt;Implantes&lt;/option&gt;
+                                &lt;option value=&quot;protese&quot;&gt;Próteses&lt;/option&gt;
+                                &lt;option value=&quot;clareamento&quot;&gt;Clareamento&lt;/option&gt;
+                                &lt;option value=&quot;limpeza&quot;&gt;Limpeza&lt;/option&gt;
+                                &lt;option value=&quot;raspagem&quot;&gt;Raspagem radicular/Tratamento periodontal&lt;/option&gt;
+                                &lt;option value=&quot;ortodontia&quot;&gt;Tratamento ortodôntico&lt;/option&gt;
+                                &lt;option value=&quot;cirurgia&quot;&gt;Tratamentos esqueléticos cirúrgicos&lt;/option&gt;
+                                &lt;option value=&quot;pediatria&quot;&gt;Atendimento pediátrico&lt;/option&gt;
+                                &lt;option value=&quot;restauracao&quot;&gt;Restaurações de cáries&lt;/option&gt;
+                                &lt;option value=&quot;faceta&quot;&gt;Facetas&lt;/option&gt;
+                            &lt;/select&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label for=&quot;description&quot;&gt;Descrição:&lt;/label&gt;
+                            &lt;textarea id=&quot;description&quot; name=&quot;description&quot; rows=&quot;4&quot; required&gt;&lt;/textarea&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label for=&quot;price&quot;&gt;Preço (R$):&lt;/label&gt;
+                            &lt;input type=&quot;number&quot; id=&quot;price&quot; name=&quot;price&quot; step=&quot;0.01&quot; min=&quot;0&quot; required&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label for=&quot;duration&quot;&gt;Duração (minutos):&lt;/label&gt;
+                            &lt;input type=&quot;number&quot; id=&quot;duration&quot; name=&quot;duration&quot; min=&quot;15&quot; step=&quot;15&quot; required&gt;
+                        &lt;/div&gt;
+                        &lt;button type=&quot;submit&quot; class=&quot;btn-primary&quot;&gt;Cadastrar Serviço&lt;/button&gt;
+                    &lt;/form&gt;
+
+                    &lt;div class=&quot;services-list&quot;&gt;
+                        &lt;h3&gt;Serviços Cadastrados&lt;/h3&gt;
+                        &lt;div id=&quot;services-table&quot;&gt;
+                            &lt;table&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;Serviço&lt;/th&gt;
+                                        &lt;th&gt;Descrição&lt;/th&gt;
+                                        &lt;th&gt;Preço&lt;/th&gt;
+                                        &lt;th&gt;Duração&lt;/th&gt;
+                                        &lt;th&gt;Ações&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody id=&quot;services-body&quot;&gt;
+                                    &lt;!-- Serviços serão inseridos aqui via JavaScript --&gt;
+                                &lt;/tbody&gt;
+                            &lt;/table&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;p&gt;&amp;copy; 2024 Clínica Odontológica. Todos os direitos reservados.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;script src=&quot;js/services.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt; </code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>service-type</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Hash Disclosure - BCrypt</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10097/">Hash Disclosure</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://openwall.info/wiki/john/sample-hashes">https://openwall.info/wiki/john/sample-hashes</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Application Error Disclosure</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90022/">Application Error Disclosure</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/550.html">550</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Spring Actuator Information Leak</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40042/">Spring Actuator Information Leak</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/215.html">215</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://docs.spring.io/spring-boot/docs/current/actuator-api/htmlsingle/#overview">https://docs.spring.io/spring-boot/docs/current/actuator-api/htmlsingle/#overview</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Cross-Domain JavaScript Source File Inclusion</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10017/">Cross-Domain JavaScript Source File Inclusion</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Authentication Request Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Authentication Request Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Divulgação de Informações - Comentários Suspeitos</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Divulgação de Informações - Comentários Suspeitos</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/615.html">615</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Information Disclosure - Sensitive Information in URL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10024/">Information Disclosure - Sensitive Information in URL</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/598.html">598</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>User Controllable HTML Element Attribute (Potential XSS)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10031/">User Controllable HTML Element Attribute (Potential XSS)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/20.html">20</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+

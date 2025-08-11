@@ -1,0 +1,586 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "OrtoBia",
+    "owner": "Vinicius Xavier",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Modelagem de Ameaças - OrtoBia",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [
+          {
+            "position": {
+              "x": 120,
+              "y": -350
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Site\n"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0ade32f8-4570-49ae-95ee-63c270613aeb"
+                },
+                {
+                  "group": "right",
+                  "id": "8805ee76-9876-420c-968b-1106cd4f291c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "faf875c2-df64-4710-82e7-a7d7bda0106a"
+                },
+                {
+                  "group": "left",
+                  "id": "9d3731ef-a2d5-41cb-bb5b-0d55c327cd73"
+                }
+              ]
+            },
+            "id": "6d674e10-e071-4c4a-87d9-20b1aefd5426",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Site\n",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 417,
+              "y": -350
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Login"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0ec8c262-2233-4fa1-bf27-8b054a25dd40"
+                },
+                {
+                  "group": "right",
+                  "id": "03797e33-052c-4f74-9ce9-3bc9146612ed"
+                },
+                {
+                  "group": "bottom",
+                  "id": "0c38b81c-1c8a-43fd-be9f-ade92cadb057"
+                },
+                {
+                  "group": "left",
+                  "id": "6839d0ba-708d-480a-a635-cf5085b94f68"
+                }
+              ]
+            },
+            "id": "332533bf-a6e3-461a-adfe-0abf19ef22a4",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "Login",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "f372fe8d-d134-4f87-bd62-26b58107492c",
+                  "title": "Ataque por força bruta",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Um ataque de força bruta ocorre quando um invasor tenta descobrir credenciais (usuário e senha) testando exaustivamente todas as combinações possíveis até encontrar a correta. Esse tipo de ataque é automatizado e pode gerar milhares ou milhões de tentativas em pouco tempo.",
+                  "mitigation": "Limitar o número de tentativas de login (ex.: após 5 tentativas falhas, bloquear a conta temporariamente).\nImplementar CAPTCHA após algumas tentativas erradas para garantir que quem está tentando é um humano.\nExigir uma segunda camada de autenticação (ex.: código via SMS, app autenticador).\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Requisição de Login",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Requisição de Login"
+            ],
+            "id": "1886cc1d-3f0a-496e-a0fb-32bff813974d",
+            "source": {
+              "x": 230,
+              "y": -310
+            },
+            "target": {
+              "cell": "332533bf-a6e3-461a-adfe-0abf19ef22a4",
+              "port": "6839d0ba-708d-480a-a635-cf5085b94f68"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": -310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Reposta do Login",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Reposta do Login"
+            ],
+            "id": "31a9664d-f542-4745-a45a-cd8638da27d8",
+            "source": {
+              "x": 450,
+              "y": -290
+            },
+            "target": {
+              "cell": "6d674e10-e071-4c4a-87d9-20b1aefd5426",
+              "port": "faf875c2-df64-4710-82e7-a7d7bda0106a"
+            },
+            "vertices": [
+              {
+                "x": 290,
+                "y": -210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Armazenamento",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Armazenamento"
+            ],
+            "id": "0942ad0c-7727-48b0-8507-56962157fdfe",
+            "source": {
+              "x": 477,
+              "y": -324
+            },
+            "target": {
+              "cell": "49440460-151e-4793-9a58-892639829d3b",
+              "port": "3cbe92f9-b03b-46a0-9ba8-4c12aaa615cf"
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": -324
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 653,
+              "y": -350
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Agendamentos"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "468c20d3-0391-4b10-9b7b-72797a866892"
+                },
+                {
+                  "group": "right",
+                  "id": "1a9fe313-fea7-4da1-9801-40bc217e0a76"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6cb395de-8ca1-4f20-a35e-a78eadf2cc4f"
+                },
+                {
+                  "group": "left",
+                  "id": "3cbe92f9-b03b-46a0-9ba8-4c12aaa615cf"
+                }
+              ]
+            },
+            "id": "49440460-151e-4793-9a58-892639829d3b",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Agendamentos",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "3ae9005a-5e19-4dde-8694-211606feeb31",
+                  "title": "DDoS (Distributed Denial of Service)",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Um DDoS (Distributed Denial of Service) é um ataque que tenta derrubar ou sobrecarregar um sistema, serviço ou rede, enviando um enorme volume de tráfego malicioso a partir de múltiplos dispositivos (geralmente zumbis de uma botnet). O objetivo é deixar o serviço indisponível para os usuários legítimos.",
+                  "mitigation": "Filtrar tráfego malicioso antes de chegar na aplicação, bloqueando padrões suspeitos.\n\nControlar o número de requisições que um IP pode fazer em determinado período (ex.: 100 requisições por minuto).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Vinicius Xavier",
+    "threatTop": 2
+  }
+}
