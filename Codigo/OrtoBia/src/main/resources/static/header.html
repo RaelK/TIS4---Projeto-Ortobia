@@ -1,0 +1,31 @@
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<header>
+  <nav class="navbar">
+    <ul class="nav-links" style="display: flex; align-items: center; gap: 2rem; list-style: none; margin: 0; padding: 0;">
+      <li>
+        <a href="index.html" style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #2c3e50; text-decoration: none;">
+          Ortobia
+        </a>
+      </li>
+      <li><a href="index.html#sobre">Sobre</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="index.html#contato">Contato</a></li>
+      <li><a href="primeiraTelaCliente.html">Página do Cliente</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const role = sessionStorage.getItem('role');
+    const menu = document.querySelector('a[href="gerenciarConsulta.html"]');
+    if (menu && role !== 'DENTISTA' && role !== 'SECRETARIA') {
+        menu.style.display = 'none';
+    }
+});
+</script>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda Semanal do Consultório</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      text-align: center;
+      padding: 4px;
+      height: 50px;
+      font-size: 12px;
+    }
+
+    th {
+      background-color: #e0e0e0;
+    }
+
+    .disponivel {
+      background-color: #c8e6c9;
+    }
+
+    .reservado {
+      background-color: #ffcdd2;
+    }
+
+    .vazio {
+      background-color: #ffffff;
+    }
+
+    .date-selector {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 20px;
+    }
+
+    .date-selector label {
+      font-weight: 500;
+    }
+
+    .date-selector input[type="date"] {
+      padding: 6px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="incluir-header"></div>
+
+  <main style="padding-top: 100px;">
+    <h1 style="text-align: center; margin: 20px 0;">Agenda Semanal do Consultório</h1>
+
+    <div class="date-selector">
+      <label for="data-especifica">Selecione a data:</label>
+      <input type="date" id="data-especifica" name="data-especifica">
+    </div>
+
+    <div style="text-align: center; margin-bottom: 15px;">
+      <button id="anterior" class="btn-primary" style="margin-right: 10px;">&larr; Semana Anterior</button>
+      <button id="proxima" class="btn-primary">&rarr; Próxima Semana</button>
+    </div>
+
+    <table id="agenda-tabela">
+      <thead id="agenda-cabecalho"></thead>
+      <tbody id="agenda-corpo"></tbody>
+    </table>
+  </main>
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('incluir-header').innerHTML = html;
+      });
+  </script>
+
+  <script>
+    const horarios = [];
+    for (let h = 9; h <= 17; h++) {
+      horarios.push(h.toString().padStart(2, '0') + ':00');
+      horarios.push(h.toString().padStart(2, '0') + ':30');
+    }
+    horarios.push("18:00");
+
+    const diasSemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+
+    const corpo = document.getElementById('agenda-corpo');
+    const cabecalho = document.getElementById('agenda-cabecalho');
+
+    let semanaOffset = 0;
+
+    function renderAgenda() {
+      corpo.innerHTML = '';
+      cabecalho.innerHTML = '';
+
+      const hoje = new Date();
+      const diaSemana = hoje.getDay();
+      const diffSegunda = hoje.getDate() - diaSemana + (diaSemana === 0 ? -6 : 1);
+      const baseDate = new Date(hoje.setDate(diffSegunda + semanaOffset * 7));
+
+      const dataMap = {};
+      const linhaCabecalho = document.createElement('tr');
+      const thHora = document.createElement('th');
+      thHora.textContent = 'Horário';
+      linhaCabecalho.appendChild(thHora);
+
+      for (let d = 0; d < 6; d++) {
+        const data = new Date(baseDate);
+        data.setDate(baseDate.getDate() + d);
+        const key = data.toISOString().split('T')[0];
+        dataMap[diasSemana[d]] = key;
+
+        const diaNum = String(data.getDate()).padStart(2, '0');
+        const mes = String(data.getMonth() + 1).padStart(2, '0');
+
+        const th = document.createElement('th');
+        th.textContent = `${diasSemana[d]} - ${diaNum}/${mes}`;
+        linhaCabecalho.appendChild(th);
+      }
+
+      cabecalho.appendChild(linhaCabecalho);
+
+      fetch('/agendamentos/disponiveis')
+        .then(res => res.json())
+        .then(agendamentos => {
+          const agenda = {};
+
+          agendamentos.forEach(a => {
+            const [date, time] = a.dataHora.split('T');
+            if (!agenda[date]) agenda[date] = {};
+            agenda[date][time.substring(0, 5)] = a.disponivel;
+          });
+
+          horarios.forEach(horario => {
+            const linha = document.createElement('tr');
+            const th = document.createElement('th');
+            th.textContent = horario;
+            linha.appendChild(th);
+
+            diasSemana.forEach(dia => {
+              const td = document.createElement('td');
+              const data = dataMap[dia];
+
+              if (dia === 'Sábado' && horario >= '13:00') {
+                td.className = 'vazio';
+                td.innerHTML = '';
+              } else {
+                const status = agenda[data]?.[horario];
+                if (status === false) {
+                  td.className = 'reservado';
+                  td.innerHTML = 'Reservado';
+                } else {
+                  td.className = 'disponivel';
+                  td.innerHTML = 'Disponível';
+                }
+              }
+
+              linha.appendChild(td);
+            });
+
+            corpo.appendChild(linha);
+          });
+        });
+    }
+
+    document.getElementById('anterior').addEventListener('click', () => {
+      semanaOffset--;
+      renderAgenda();
+    });
+
+    document.getElementById('proxima').addEventListener('click', () => {
+      semanaOffset++;
+      renderAgenda();
+    });
+
+    document.getElementById('data-especifica').addEventListener('change', function () {
+      const dataSelecionada = new Date(this.value);
+      if (!isNaN(dataSelecionada)) {
+        const hoje = new Date();
+        const diaSelecionado = new Date(dataSelecionada);
+        const diffDias = Math.floor((diaSelecionado - hoje) / (24 * 60 * 60 * 1000));
+        const offset = Math.floor(diffDias / 7);
+        semanaOffset = offset;
+        renderAgenda();
+      }
+    });
+
+    renderAgenda();
+  </script>
+
+  <footer>
+    <div id="incluir-footer"></div>
+  </footer>
+
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('incluir-footer').innerHTML = data;
+      });
+  </script>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('incluir-header').innerHTML = data;
+      });
+  </script>
+
+</body>
+
+</html>

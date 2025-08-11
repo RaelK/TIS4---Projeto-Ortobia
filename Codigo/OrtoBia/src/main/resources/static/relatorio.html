@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Relatório do Paciente</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    .relatorio-container {
+      max-width: 800px;
+      margin: 120px auto 40px auto;
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .relatorio-container h2 {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      font-size: 20px;
+    }
+
+    .relatorio-container p {
+      margin: 4px 0;
+      font-size: 15px;
+    }
+
+    .btn-exportar {
+      display: block;
+      margin: 0 auto 20px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-exportar:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="incluir-header"></div>
+
+  <main>
+    <button class="btn-exportar" onclick="gerarPDF()">Exportar como PDF</button>
+
+    <div id="relatorio" class="relatorio-container">
+      <h2>Carregando dados do paciente...</h2>
+    </div>
+  </main>
+
+  <footer>
+    <div id="incluir-footer"></div>
+  </footer>
+
+  <!-- Header e Footer -->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('incluir-header').innerHTML = data;
+      });
+    fetch('footer.html').then(r => r.text()).then(t => document.getElementById('incluir-footer').innerHTML = t);
+  </script>
+
+  <!-- PDF -->
+  <script>
+    function gerarPDF() {
+      const elemento = document.getElementById('relatorio');
+      html2pdf().from(elemento).save('relatorio-paciente.pdf');
+    }
+  </script>
+
+  <!-- Carregar dados por ID -->
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
+    if (id) {
+      fetch(`/relatorios/${id}`)
+        .then(response => response.json())
+        .then(data => {
+          const r = document.getElementById('relatorio');
+          r.innerHTML = `
+            <h2>Identificação</h2>
+            <p><strong>Nome:</strong> ${data.nome || 'N/A'}</p>
+            <p><strong>Email:</strong> ${data.email || 'N/A'}</p>
+            <p><strong>Telefone:</strong> ${data.telefone || 'N/A'}</p>
+
+            <h2>Agendamento</h2>
+            <p><strong>Data:</strong> ${data.data || 'N/A'}</p>
+            <p><strong>Horário:</strong> ${data.horario || 'N/A'}</p>
+
+            <h2>Procedimentos</h2>
+            <p><strong>Tipo de Serviço:</strong> ${data.tipoServico || 'N/A'}</p>
+            <p><strong>Descrição:</strong> ${data.descricao || 'N/A'}</p>
+            <p><strong>Preço:</strong> R$ ${data.preco || 'N/A'}</p>
+            <p><strong>Duração:</strong> ${data.duracao || 'N/A'} minutos</p>
+
+            <h2>Histórico do Paciente</h2>
+            <p><strong>Última consulta:</strong> ${data.ultimaConsulta || 'N/A'}</p>
+            <p><strong>Tratamentos anteriores:</strong> ${data.tratamentosAnteriores || 'N/A'}</p>
+            <p><strong>Cirurgias:</strong> ${data.cirurgias || 'N/A'}</p>
+            <p><strong>Hábitos de higiene:</strong> ${data.higiene || 'N/A'}</p>
+
+            <h2>Consulta Atual</h2>
+            <p><strong>Observações clínicas:</strong> ${data.observacoes || 'N/A'}</p>
+            <p><strong>Exames:</strong> ${data.exames || 'N/A'}</p>
+            <p><strong>Diagnóstico:</strong> ${data.diagnostico || 'N/A'}</p>
+
+            <h2>Plano de Tratamento</h2>
+            <p><strong>Procedimentos planejados:</strong> ${data.procedimentosPlanejados || 'N/A'}</p>
+            <p><strong>Alterações no plano:</strong> ${data.alteracoesPlano || 'N/A'}</p>
+
+            <h2>Orientações</h2>
+            <p><strong>Medicamentos:</strong> ${data.medicamentos || 'N/A'}</p>
+            <p><strong>Restrições:</strong> ${data.restricoes || 'N/A'}</p>
+            <p><strong>Cuidados:</strong> ${data.cuidados || 'N/A'}</p>
+          `;
+        })
+        .catch(err => {
+          document.getElementById('relatorio').innerHTML = "<h2>Erro ao carregar relatório.</h2>";
+          console.error("Erro:", err);
+        });
+    } else {
+      document.getElementById('relatorio').innerHTML = "<h2>Nenhum ID de paciente fornecido.</h2>";
+    }
+  </script>
+
+</body>
+
+</html>

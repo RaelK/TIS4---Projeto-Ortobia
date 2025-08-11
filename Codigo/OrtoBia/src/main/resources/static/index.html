@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Odontológica</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="js/logout.js"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="incluir-header"></div>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Bem-vindo à Ortobia!
+            Tecnologia, acolhimento e qualidade.</h2>
+          <p>Cuide do seu sorriso com a melhor profissional.</p>
+          <a href="agenda.html" class="btn-primary">Agende sua Consulta</a>
+        </div>
+        <div class="hero-image">
+          <img src="./images/Principal (fundo claro) 2.png" alt="Dentista" id="dentist-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="about-section">
+    <div class="container">
+      <h2>Sobre a Dra. Beatriz Mamede</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Formada em Odontologia pela Pontífica Universidade Católica de Minas Gerais em 2020, com especialização em
+            implantodontia e ortodontia e atualmente terminando a terceira pós graduação.</p>
+          <p>Possuo mais de 5 anos de experiência no mercado, oferecendo tratamentos de qualidade e personalizados para
+            cada paciente.</p>
+        </div>
+        <div class="about-image">
+          <img src="./images/Dra-Beatriz-Mamede-62.jpg" alt="Consultório" id="office-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact-section">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p><strong>Endereço:</strong> R. Cândido Nogueira, 35 - Grajaú, Belo Horizonte - MG, 30431-218</p>
+          <p><strong>Telefone:</strong> (31)9 8366-8435</p>
+          <p><strong>Email:</strong> dra.beatriz.mamede@gmail.com</p>
+        </div>
+        <div class="contact-hours">
+          <h3>Horário de Funcionamento</h3>
+          <p>Segunda a Sexta: 9h às 18h</p>
+          <p>Sábado: 9h às 13h</p>
+          <p>Domingo: Fechado</p>
+        </div>
+      </div>
+      <h3>Nossa Localização</h3>
+      <div class="mapa-responsivo">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.6667673517654!2d-43.96855302387773!3d-19.938442538573202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6970a424300ff%3A0xf3b7b254e2cd1c43!2sR.%20C%C3%A2ndido%20Nogueira%2C%2035%20-%20Graja%C3%BA%2C%20Belo%20Horizonte%20-%20MG%2C%2030431-218!5e0!3m2!1spt-BR!2sbr!4v1751393610806!5m2!1spt-BR!2sbr"
+          style="border: 1px;;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <div id="incluir-footer"></div>
+  <footer></footer>
+
+  <!-- Footer fetch script -->
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('incluir-footer').innerHTML = data;
+      });
+  </script>
+
+  <style>
+    .mapa-responsivo {
+      overflow: hidden;
+      padding-bottom: 40%;
+      position: relative;
+      height: 0;
+      width: 90%;
+      margin-top: 1rem;
+    }
+
+    .mapa-responsivo iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  </style>
+
+</body>
+
+</html>

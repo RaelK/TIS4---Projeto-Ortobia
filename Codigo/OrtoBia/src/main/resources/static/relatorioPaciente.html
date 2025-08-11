@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Relatório de Paciente - Ortobia
+  </title>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js">
+  </script>
+ </head>
+ <body>
+  <!-- Header dinâmico -->
+  <div id="incluir-header">
+  </div>
+  <main class="schedule-section">
+   <div class="container">
+    <h2>
+     Consultar Relatório do Paciente
+    </h2>
+    <div class="auth-box">
+     <form id="relatorio-form">
+      <div class="form-group">
+       <label for="identificador">
+        Informe o Nome, E-mail ou Telefone do Paciente:
+       </label>
+       <input id="identificador" name="identificador" required="" type="text"/>
+      </div>
+      <button class="btn-primary" type="submit">
+       Consultar Relatório
+      </button>
+     </form>
+    </div>
+   </div>
+  </main>
+  <!-- Footer dinâmico -->
+  <footer>
+   <div id="incluir-footer">
+   </div>
+  </footer>
+  <!-- Scripts de inclusão -->
+  <script>
+   fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('incluir-header').innerHTML = data;
+      });
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('incluir-footer').innerHTML = data;
+      });
+  </script>
+  <!-- Script do formulário -->
+  <script>
+   document.getElementById("relatorio-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const identificador = document.getElementById("identificador").value;
+      if (identificador) {
+        const url = `/relatorios?identificador=${encodeURIComponent(identificador)}`;
+        window.open(url, "_blank");
+      }
+    });
+  </script>
+ </body>
+</html>

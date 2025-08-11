@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliar Consulta - OrtoBia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="incluir-header"></div>
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-center">Avaliar Consulta</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="formAvaliacao">
+                            <div class="mb-4">
+                                <label class="form-label">Como você avalia o atendimento?</label>
+                                <div class="d-flex justify-content-between">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nota" value="1" id="nota1">
+                                        <label class="form-check-label" for="nota1">1</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nota" value="2" id="nota2">
+                                        <label class="form-check-label" for="nota2">2</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nota" value="3" id="nota3">
+                                        <label class="form-check-label" for="nota3">3</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nota" value="4" id="nota4">
+                                        <label class="form-check-label" for="nota4">4</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nota" value="5" id="nota5">
+                                        <label class="form-check-label" for="nota5">5</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="comentario" class="form-label">Comentários (opcional)</label>
+                                <textarea class="form-control" id="comentario" rows="4" placeholder="Conte-nos sua experiência..."></textarea>
+                            </div>
+
+                            <div class="mb-4 form-check">
+                                <input type="checkbox" class="form-check-input" id="anonimo">
+                                <label class="form-check-label" for="anonimo">Manter avaliação anônima</label>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">Enviar Avaliação</button>
+                                <a href="primeiraTelaCliente.html" class="btn btn-secondary">Voltar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('incluir-header').innerHTML = data;
+            });
+    </script>
+    <script src="js/avaliacao.js"></script>
+</body>
+</html> 
